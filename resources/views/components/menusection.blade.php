@@ -1,7 +1,7 @@
     <section class="bg-white py-16 md:py-24" id="menu">
       <div class="container mx-auto px-4">
         <h2 class="text-4xl md:text-5xl text-center mb-12">
-          <span class="font-kalam text-amber-500">Nos Snacks</span>
+          <span class="font-kalam text-amber-500">Nos Packs</span>
           <span class="font-poppins-black text-black block -mt-2 md:-mt-3">LES PLUS POPULAIRES</span>
         </h2>
         

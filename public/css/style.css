@@ -1,0 +1,28 @@
+ @layer utilities {
+      body {
+        font-family: 'Poppins', sans-serif;
+        scroll-behavior: smooth;
+      }
+      .font-kalam {
+        font-family: 'Kalam', cursive;
+      }
+      .font-poppins-black {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+      }
+      .hero-bg {
+        background-image: linear-gradient(rgba(251, 191, 36, 0.8), rgba(251, 191, 36, 0.8)), url('https://images.unsplash.com/photo-1605203352227-34c9b33a7589?q=80&w=2940&auto=format&fit=crop');
+        background-size: cover;
+        background-position: center;
+      }
+      .menu-item:hover .menu-item-img {
+        transform: scale(1.05);
+      }
+      .fade-in {
+        animation: fadeIn 0.5s ease-in;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+    }
