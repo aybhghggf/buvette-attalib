@@ -1,9 +1,9 @@
 <header class="fixed top-0 left-0 right-0 z-50 bg-amber-400/90 backdrop-blur-sm">
     <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <a class="font-kalam text-2xl font-bold text-black hover:text-amber-600 transition-colors" href="#" aria-label="Accueil Buvette Attalib">Buvette Attalib</a>
+      <a class="font-kalam text-2xl font-bold text-black hover:text-amber-600 transition-colors" href="{{ route('index') }}" aria-label="Accueil Buvette Attalib">Buvette Attalib</a>
       
       <div class="hidden md:flex items-center space-x-8">
-        <a class="text-black font-semibold hover:text-white transition duration-300" href="#menu">Menu</a>
+        <a class="text-black font-semibold hover:text-white transition duration-300" href="{{ route('menu') }}">Menu</a>
         <a class="text-black font-semibold hover:text-white transition duration-300" href="#about">À propos</a>
         <a class="text-black font-semibold hover:text-white transition duration-300" href="#contact">Contact</a>
         <button class="bg-black text-white font-bold py-2 px-6 rounded-full text-sm hover:bg-gray-800 transition duration-300 order-btn">

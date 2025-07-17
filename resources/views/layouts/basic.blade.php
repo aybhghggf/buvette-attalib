@@ -21,21 +21,13 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
-
-<body class="bg-amber-400">
+<body>
     <!-- Header with working mobile menu -->
     <x-navbar/>
 
-    <main class="min-h-screen pt-16">
-        <!-- Hero Section -->
-        <x-herosection/>
-
-        <!-- Menu Section -->
-        <x-menusection/>
-
-        <!-- About Section -->
-        <x-aboutsection/>
-    </main>
+    <!-- Content -->
+    @yield('Home')
+    @yield('MenuPage')
 
     <!-- Footer -->
     <x-footer/>
