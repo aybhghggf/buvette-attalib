@@ -28,11 +28,14 @@
     <!-- Content -->
     @yield('Home')
     @yield('MenuPage')
+    @yield('AboutPage')
 
     <!-- Footer -->
     <x-footer/>
 
     <!-- JavaScript -->
     <script src="{{ asset('js/script1.js') }}"></script>
+    <script src="{{ asset('js/menu.js') }}"></script>
+
 </body>
 </html>

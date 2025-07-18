@@ -16,5 +16,9 @@ class IndexController extends Controller
         return view('menu');
     }
 
+    public function showAbout()
+    {
+        return view('aboutpage');
+    }
 
 }
