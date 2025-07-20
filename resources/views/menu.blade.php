@@ -14,15 +14,15 @@
                 <ul class="space-y-2" id="category-list">
                     <li>
                         <a class="category-link block px-4 py-2 rounded-md font-semibold text-gray-700 hover:bg-amber-400 hover:text-white transition-colors duration-300"
-                           data-category="boissons" href="#">Boissons</a>
+                           data-category="boissons" href="#">Café et Boissons</a>
                     </li>
                     <li>
                         <a class="category-link block px-4 py-2 rounded-md font-semibold text-gray-700 hover:bg-amber-400 hover:text-white transition-colors duration-300"
-                           data-category="snacks" href="#">Snacks Salés</a>
+                           data-category="snacks" href="#">Snacks Marocains</a>
                     </li>
                     <li>
                         <a class="category-link block px-4 py-2 rounded-md font-semibold text-gray-700 hover:bg-amber-400 hover:text-white transition-colors duration-300"
-                           data-category="patisseries" href="#">Pâtisseries</a>
+                           data-category="patisseries" href="#">Jus Naturels</a>
                     </li>
                 </ul>
             </div>
