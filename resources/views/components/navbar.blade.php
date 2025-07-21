@@ -7,7 +7,7 @@
         <a class="text-black font-semibold hover:text-white transition duration-300" href="{{ route('menu') }}">Menu</a>
         <a class="text-black font-semibold hover:text-white transition duration-300" href="{{ route('about') }}">À propos</a>
         <button class="bg-black text-white font-bold py-2 px-6 rounded-full text-sm hover:bg-gray-800 transition duration-300 order-btn">
-          Commander
+          Votre Panier
         </button>
       </div>
       

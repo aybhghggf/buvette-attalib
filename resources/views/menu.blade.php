@@ -30,77 +30,85 @@
 
         <!-- Main Section: Produits -->
         <section class="w-full md:w-3/4" id="products-section">
+
             <!-- Boissons -->
             <div class="product-category" id="boissons">
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     @foreach ($products as $product)
                         @if ($product->id_categorie == 1)
-                            <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform duration-300 flex flex-col">
-                                <div class="w-full h-[400px] overflow-hidden">
-                                    <img 
-                                        src="{{ asset('pack_images/' . $product->image) }}" 
-                                        alt="{{ $product->nom }}" 
-                                        class="w-full h-full object-cover object-center transition duration-300 hover:scale-105"
-                                    />
+                            <a href="{{ route('product', ['id' => $product->id]) }}" class="block">
+                                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform duration-300 flex flex-col">
+                                    <div class="w-full h-[400px] overflow-hidden">
+                                        <img 
+                                            src="{{ asset('pack_images/' . $product->image) }}" 
+                                            alt="{{ $product->nom }}" 
+                                            class="w-full h-full object-cover object-center transition duration-300 hover:scale-105"
+                                        />
+                                    </div>
+                                    <div class="p-6 text-center flex-1 flex flex-col justify-between">
+                                        <h3 class="text-2xl font-bold text-black mb-2">{{ $product->nom }}</h3>
+                                        <p class="text-gray-700 mb-4">{{ $product->description }}</p>
+                                        <p class="text-3xl font-poppins-black text-amber-500">{{ number_format($product->prix, 2) }} Dhs</p>
+                                    </div>
                                 </div>
-                                <div class="p-6 text-center flex-1 flex flex-col justify-between">
-                                    <h3 class="text-2xl font-bold text-black mb-2">{{ $product->nom }}</h3>
-                                    <p class="text-gray-700 mb-4">{{ $product->description }}</p>
-                                    <p class="text-3xl font-poppins-black text-amber-500">{{ number_format($product->prix, 2) }} Dhs</p>
-                                </div>
-                            </div>
+                            </a>
                         @endif
                     @endforeach
                 </div>
             </div>
 
-            <!-- Snacks Salés -->
+            <!-- Snacks -->
             <div class="product-category hidden" id="snacks">
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     @foreach ($products as $product)
                         @if ($product->id_categorie == 2)
-                            <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform duration-300 flex flex-col">
-                                <div class="w-full h-[400px] overflow-hidden">
-                                    <img 
-                                        src="{{ asset('pack_images/' . $product->image) }}" 
-                                        alt="{{ $product->nom }}" 
-                                        class="w-full h-full object-cover object-center transition duration-300 hover:scale-105"
-                                    />
+                            <a href="{{ route('product', ['id' => $product->id]) }}" class="block">
+                                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform duration-300 flex flex-col">
+                                    <div class="w-full h-[400px] overflow-hidden">
+                                        <img 
+                                            src="{{ asset('pack_images/' . $product->image) }}" 
+                                            alt="{{ $product->nom }}" 
+                                            class="w-full h-full object-cover object-center transition duration-300 hover:scale-105"
+                                        />
+                                    </div>
+                                    <div class="p-6 text-center flex-1 flex flex-col justify-between">
+                                        <h3 class="text-2xl font-bold text-black mb-2">{{ $product->nom }}</h3>
+                                        <p class="text-gray-700 mb-4">{{ $product->description }}</p>
+                                        <p class="text-3xl font-poppins-black text-amber-500">{{ number_format($product->prix, 2) }} Dhs</p>
+                                    </div>
                                 </div>
-                                <div class="p-6 text-center flex-1 flex flex-col justify-between">
-                                    <h3 class="text-2xl font-bold text-black mb-2">{{ $product->nom }}</h3>
-                                    <p class="text-gray-700 mb-4">{{ $product->description }}</p>
-                                    <p class="text-3xl font-poppins-black text-amber-500">{{ number_format($product->prix, 2) }} Dhs</p>
-                                </div>
-                            </div>
+                            </a>
                         @endif
                     @endforeach
                 </div>
             </div>
 
-            <!-- Pâtisseries -->
+            <!-- Jus Naturels -->
             <div class="product-category hidden" id="patisseries">
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     @foreach ($products as $product)
                         @if ($product->id_categorie == 3)
-                            <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform duration-300 flex flex-col">
-                                <div class="w-full h-[400px] overflow-hidden">
-                                    <img 
-                                        src="{{ asset('pack_images/' . $product->image) }}" 
-                                        alt="{{ $product->nom }}" 
-                                        class="w-full h-full object-cover object-center transition duration-300 hover:scale-105"
-                                    />
+                            <a href="{{ route('product', ['id' => $product->id]) }}" class="block">
+                                <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transform hover:scale-105 transition-transform duration-300 flex flex-col">
+                                    <div class="w-full h-[400px] overflow-hidden">
+                                        <img 
+                                            src="{{ asset('pack_images/' . $product->image) }}" 
+                                            alt="{{ $product->nom }}" 
+                                            class="w-full h-full object-cover object-center transition duration-300 hover:scale-105"
+                                        />
+                                    </div>
+                                    <div class="p-6 text-center flex-1 flex flex-col justify-between">
+                                        <h3 class="text-2xl font-bold text-black mb-2">{{ $product->nom }}</h3>
+                                        <p class="text-gray-700 mb-4">{{ $product->description }}</p>
+                                        <p class="text-3xl font-poppins-black text-amber-500">{{ number_format($product->prix, 2) }} Dhs</p>
+                                    </div>
                                 </div>
-                                <div class="p-6 text-center flex-1 flex flex-col justify-between">
-                                    <h3 class="text-2xl font-bold text-black mb-2">{{ $product->nom }}</h3>
-                                    <p class="text-gray-700 mb-4">{{ $product->description }}</p>
-                                    <p class="text-3xl font-poppins-black text-amber-500">{{ number_format($product->prix, 2) }} Dhs</p>
-                                </div>
-                            </div>
+                            </a>
                         @endif
                     @endforeach
                 </div>
             </div>
+
         </section>
     </div>
 </main>

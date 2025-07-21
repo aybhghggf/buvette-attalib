@@ -21,21 +21,32 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
+
+
+
 <body>
+    
     <!-- Header with working mobile menu -->
+        @if(session()->has('success'))
+        <x-succesalert />
+    @elseif(session()->has('error'))
+        <x-ereuralert />
+    @endif
     <x-navbar/>
+
 
     <!-- Content -->
     @yield('Home')
     @yield('MenuPage')
     @yield('AboutPage')
-
+    @yield('Produit')
     <!-- Footer -->
     <x-footer/>
 
     <!-- JavaScript -->
     <script src="{{ asset('js/script1.js') }}"></script>
     <script src="{{ asset('js/menu.js') }}"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
 </body>
 </html>

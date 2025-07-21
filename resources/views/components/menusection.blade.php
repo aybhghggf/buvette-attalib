@@ -36,9 +36,9 @@
 
     <!-- View More Button -->
     <div class="text-center mt-12">
-      <button class="inline-block border-2 border-black text-black font-bold py-3 px-8 rounded-full hover:bg-black hover:text-white transition">
+      <a href="{{ route('menu') }}" class="inline-block border-2 border-black text-black font-bold py-3 px-8 rounded-full hover:bg-black hover:text-white transition">
         Voir tout le menu
-      </button>
+      </a>
     </div>
   </div>
 </section>
