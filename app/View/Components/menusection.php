@@ -8,12 +8,13 @@ use Illuminate\View\Component;
 
 class menusection extends Component
 {
+    public $packs;
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public function __construct( $packs)
     {
-        //
+        $this->packs = $packs;
     }
 
     /**

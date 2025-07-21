@@ -11,9 +11,9 @@
               Un clic suffit pour savourer le meilleur de la pause étudiante !
             </p>
             <div class="mt-8">
-              <button class="inline-block bg-black text-white font-bold py-4 px-10 rounded-full text-lg hover:bg-gray-800 transition duration-300 order-btn">
+              <a href="{{ route('menu') }}" class="inline-block bg-black text-white font-bold py-4 px-10 rounded-full text-lg hover:bg-gray-800 transition duration-300 order-btn">
                 COMMANDER MAINTENANT
-              </button>
+              </a>
               <p class="mt-4 text-sm text-black font-semibold">buvette-attalib.ma</p>
             </div>
           </div>

@@ -1,14 +1,12 @@
 @extends( 'layouts.basic' )
 @section( 'Home' )
 <body class="bg-amber-400">
-
-
     <main class="min-h-screen pt-16">
         <!-- Hero Section -->
         <x-herosection/>
 
         <!-- Menu Section -->
-        <x-menusection/>
+        <x-menusection :packs="$populairepack"/>
 
         <!-- About Section -->
         <x-aboutsection/>
