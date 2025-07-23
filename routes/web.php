@@ -12,3 +12,10 @@ Route::get('/about', [App\Http\Controllers\IndexController::class, 'showAbout'])
 Route::get('/menu/{id}', [App\Http\Controllers\ProductController::class, 'showProduct'])->name('product');
 
 Route::post('/ajouterPanier/{id}', [App\Http\Controllers\ProductController::class, 'ajouterPanier'])->name('ajouterPanier');
+
+Route::get('/panier', [App\Http\Controllers\PanierController::class, 'index'])->name('panier');
+
+Route::delete('/supprimerPanier/{id}', [App\Http\Controllers\ProductController::class, 'SupprimerPanier'])->name('supprimerPanier');
+
+// Checkout route
+Route::post('/passer-commande', [App\Http\Controllers\ProductController::class, 'passerCommande'])->name('passer-commande');
