@@ -4,9 +4,9 @@
         <div class="grid md:grid-cols-2 gap-8 items-center">
           <div class="text-center md:text-left fade-in">
             <h1 class="text-5xl md:text-7xl lg:text-8xl">
-              <span class="font-kalam text-black">Online Snaks</span>
-              <span class="font-poppins-black text-white block -mt-2 md:-mt-4">DELIVERY</span>
-            </h1>
+  <span class="font-kalam text-black">Commandez</span>
+  <span class="font-poppins-black text-white block -mt-2 md:-mt-4">vos snacks en ligne !</span>
+</h1>
             <p class="mt-4 text-lg md:text-xl text-black max-w-md mx-auto md:mx-0">
               Un clic suffit pour savourer le meilleur de la pause étudiante !
             </p>

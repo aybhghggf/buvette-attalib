@@ -10,7 +10,7 @@ Votre Panier
 
 <div id="alerts" class="fixed top-4 right-4 z-50"></div>
 
-<div class="px-40 flex flex-1 justify-center py-14">
+<div class="px-40 flex flex-1 justify-center py-14 mt-8 md:mt-12">
   <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
     <div class="flex flex-wrap justify-between gap-3 p-4">
       <p class="text-[#1b150d] tracking-light text-[32px] font-bold leading-tight min-w-72">Votre Panier</p>
@@ -46,16 +46,16 @@ Votre Panier
     </div>
     @endforeach
 
-    <h2 class="text-[#1b150d] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Summary</h2>
+    <h2 class="text-[#1b150d] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Résumé</h2>
 
     <div class="p-4">
       <div class="flex justify-between gap-x-6 py-2">
-        <p class="text-[#9a744c] text-sm font-normal leading-normal">Subtotal</p>
+        <p class="text-[#9a744c] text-sm font-normal leading-normal">Sous-total</p>
         <p class="text-[#1b150d] text-sm font-normal leading-normal text-right">{{ number_format($totaleDuPanier, 2) }} MAD</p>
       </div>
       <div class="flex justify-between gap-x-6 py-2">
-        <p class="text-[#9a744c] text-sm font-normal leading-normal">Shipping</p>
-        <p class="text-[#1b150d] text-sm font-normal leading-normal text-right">Free</p>
+        <p class="text-[#9a744c] text-sm font-normal leading-normal">Livraison</p>
+        <p class="text-[#1b150d] text-sm font-normal leading-normal text-right">Gratuite</p>
       </div>
       <div class="flex justify-between gap-x-6 py-2">
         <p class="text-[#9a744c] text-sm font-normal leading-normal">Total</p>
@@ -69,7 +69,7 @@ Votre Panier
         id="checkout-button"
         class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-5 bg-[#ee993e] text-[#1b150d] text-base font-bold leading-normal tracking-[0.015em]"
       >
-        <span class="truncate">Proceed to Checkout</span>
+        <span class="truncate">Passer à la commande</span>
       </button>
     </div>
   </div>
@@ -156,11 +156,10 @@ Votre Panier
           <label class="block text-[#1b150d] text-sm font-medium mb-2">Localisation</label>
           <select name="localisation" required class="w-full px-4 py-3 rounded-xl border border-[#e7dccf] bg-[#fcfaf8] focus:border-[#ee993e] focus:outline-none text-[#1b150d] transition-colors appearance-none cursor-pointer">
             <option value="">Sélectionnez votre localisation</option>
-            <option value="Casablanca">Casablanca</option>
-            <option value="Rabat">Rabat</option>
-            <option value="Marrakech">Marrakech</option>
-            <option value="Fes">Fes</option>
-            <option value="Tanger">Tanger</option>
+              <option value="ISTAG Yaakoub el mansour">ISTAG Yaakoub el mansour</option>
+              <option value="Centre Formation Almajd">Centre Formation Almajd</option>
+              <option value="NTIC Rabat">NTIC Rabat</option>
+              <option value="ISTA Hay arriyad">ISTA Hay arriyad</option>
           </select>
         </div>
 

@@ -3,7 +3,7 @@
 @section('MenuPage')
 <div id="alerts" class="fixed top-5 right-5 z-50"></div>
 
-<main class="container mx-auto px-4 py-8 md:py-16">
+<main class="container mx-auto px-4 py-8 md:py-16 mt-16 md:mt-24">
     <h1 class="text-4xl md:text-5xl text-center mb-12">
         <span class="font-kalam text-amber-500">Découvrez Notre</span>
         <span class="font-poppins-black text-black block -mt-2 md:-mt-3">MENU VARIÉ</span>

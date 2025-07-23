@@ -7,7 +7,7 @@ Details du Pack
 <!-- Alerts container -->
 <div id="alerts" class="fixed top-4 right-4 z-50 max-w-md"></div>
 
-<div class="px-40 flex flex-1 justify-center py-14">
+<div class="px-40 flex flex-1 justify-center py-14 mt-8 md:mt-12">
           <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
             <div class="@container">
               <div class="flex flex-col gap-6 px-4 py-10 @[480px]:gap-8 @[864px]:flex-row">

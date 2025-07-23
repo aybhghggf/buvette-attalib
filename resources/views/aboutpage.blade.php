@@ -50,7 +50,7 @@
 </head>
 
 <body class="bg-[var(--background-color)] text-[var(--text-color)]">
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 mt-8 md:mt-12">
     <div class="max-w-6xl mx-auto">
 
       <!-- Header -->

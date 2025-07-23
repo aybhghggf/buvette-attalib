@@ -5,13 +5,8 @@
 </h2>
 <p class="text-lg md:text-xl mb-4">Une question ? Une suggestion ? Nous sommes là pour vous !</p>
 <p class="font-bold text-amber-400 text-xl mb-8">contact@buvette-attalib.ma</p>
-<div class="flex justify-center items-center space-x-8">
-<div class="h-12 w-24 bg-gray-200/20 rounded flex items-center justify-center">
-<span class="text-gray-400 text-sm">OFPPT Logo</span>
-</div>
-<div class="h-12 w-24 bg-gray-200/20 rounded flex items-center justify-center">
-<span class="text-gray-400 text-sm">Partner Logo</span>
-</div>
+<div class="flex justify-center items-center space-x-8 ">
+<img src="{{ asset('images/OFPPT.png') }}" alt="OFPPT Logo" class="h-12 w-24 object-contain">
 </div>
 </div>
 </footer>
